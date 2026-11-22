@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmileSpectrum Dental · Prototype clinic website</title>
+  <meta name="description" content="A prototype dental clinic website: departments, treatments, specialists, appointment booking and feedback. Fictional clinic, sample content.">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+
+  <!-- PROTOTYPE NOTICE (always visible) -->
+  <div class="proto-banner">
+    🧪 <b>This is a prototype, not a real clinic's website.</b> SmileSpectrum Dental is fictional: doctors, timings and
+    feedback are sample content, and bookings made here are <b>not real appointments</b>.
+    <a href="#about">Read more</a>
+  </div>
+
+  <header class="topbar">
+    <a href="#home" class="brand"><span class="logo">🦷</span> SmileSpectrum <small>Dental</small></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    <nav id="nav">
+      <a href="#home" data-page="home">Home</a>
+      <a href="#departments" data-page="departments">Departments</a>
+      <a href="#specialists" data-page="specialists">Specialists</a>
+      <a href="#feedback" data-page="feedback">Feedback</a>
+      <a href="#my-bookings" data-page="my-bookings">My bookings</a>
+      <a href="#book" class="nav-cta">Book appointment</a>
+    </nav>
+  </header>
+
+  <!-- Pages are drawn here by app.js -->
+  <main id="app"></main>
+
+  <div class="toast" id="toast"></div>
+
+  <footer>
+    <div class="foot-grid">
+      <div>
+        <b>🦷 SmileSpectrum Dental</b>
+        <p>A <b>prototype</b> dental clinic website. Fictional clinic: no real doctors, patients or appointments.</p>
+      </div>
+      <div>
+        <b>Explore</b>
+        <p><a href="#departments">Departments</a> · <a href="#specialists">Specialists</a> · <a href="#book">Book</a> · <a href="#feedback">Feedback</a> · <a href="#about">Prototype notice</a></p>
+      </div>
+      <div>
+        <b>Hours (sample)</b>
+        <p>Mon–Sat · 10:00 am – 8:00 pm<br>Sunday closed</p>
+      </div>
+    </div>
+    <p class="foot-note">Information on treatments is general and for demonstration only, not medical advice. In a dental emergency,
+      contact a real dentist or hospital. Prototype built by <b>Anjali Bhushan</b> · IIM Kozhikode ·
+      <a href="https://github.com/anjali-bhushan/smilespectrum" target="_blank" rel="noopener">View code on GitHub</a></p>
+  </footer>
+
+  <script src="data.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
